@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 100px; /* spacing between sections */
+        }
+
+        .text-block {
+            max-width: 60%;
+        }
+
+            .text-block h2 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+            .text-block p {
+                margin-top: 10px;
+                font-size: 1em;
+                color: #cccccc;
+            }
+
+        .image {
+            max-width: 250px;
+            height: auto;
+            margin: 0 30px;
+        }
+
+        /* Align image based on class */
+        .image-left {
+            order: -1; /* image first, text second */
+        }
+
+        .image-right {
+            order: 1; /* text first, image second */
+        }
+
+        /* Centered text for the fourth section */
+        .center-text {
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Fifth section far down */
+        .far-down {
+            margin-top: 25000px;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 800px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Section: Image on Right -->
+    <div class="section">
+        <div class="text-block">
+            <h2>T.E.C</h2>
+            <p>50 Days until the Dawn</p>
+        </div>
+        <img src="Bucky.jpg" alt="Image Right" class="image image-right">
+    </div>
+
+    <!-- Second Section: Image on Left -->
+    <div class="section">
+        <img src="https://via.placeholder.com/250" alt="Image Not Found" class="image image-left">
+        <div class="text-block">
+            <h2>H.A</h2>
+            <p>40 Days until the March into the Evil</p>
+        </div>
+    </div>
+
+    <!-- Third Section: Image on Right -->
+    <div class="section">
+        <div class="text-block">
+            <h2>C.F</h2>
+            <p>14 Days until the Plague Doctor puts his mask on.</p>
+        </div>
+        <img src="sMaskBlackAndWhite.png" alt="Image Right" class="image image-right">
+    </div>
+
+    <!-- Fourth Section: Text Only, Centered -->
+    <div class="section center-text">
+        <div class="text-block">
+            <h2>That Night Shift at Ryes' Trampoline Park</h2>
+            <p>
+                Meet Rye and his companions! Adapted from the popular novel made by (Redacted) and (Redacted)'s brother, they made the trampoline park alongside their cozy companions for the business's success. You aren't alone. You are in a terrible place and looking for hire, but all the day shifts have recently expired. So in help you go to this place in hire.
+            </p>
+        </div>
+    </div>
+
+    <!-- Fifth Section: Far Down -->
+    <div class="far-down">
+        <h2>?</h2>
+        <p>
+            ✋︎🕯︎💣︎ ✋︎☠︎ ☟︎☜︎☹︎☹︎ 🕈︎✌︎✋︎❄︎✋︎☠︎☝︎ ☞︎⚐︎☼︎ ✡︎⚐︎🕆︎📬︎ 👍︎⚐︎☹︎☹︎☜︎👍︎❄︎ ❄︎☟︎☜︎ 🏱︎✋︎☜︎👍︎☜︎💧︎ ✌︎☠︎👎︎ 🕈︎✌︎✋︎❄︎📬︎ 🏱︎☼︎✌︎✡︎☜︎☼︎💧︎ 💣︎✌︎✡︎ 👌︎☜︎ ❄︎☟︎☜︎ ⚐︎☠︎☹︎✡︎ 💧︎✌︎☞︎☜︎❄︎✡︎ ✡︎⚐︎🕆︎ ☟︎✌︎✞︎☜︎ ✌︎☝︎✌︎✋︎☠︎💧︎❄︎ ✍︎📬︎📭︎✍︎⚐︎
+            ⧫︎□︎□︎ ●︎♋︎⧫︎♏︎📬︎
+        </p>
+    </div>
+
+</body>
+</html>
